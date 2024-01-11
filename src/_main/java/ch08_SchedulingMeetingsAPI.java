@@ -1,6 +1,17 @@
 import java.util.*;
 
 public class ch08_SchedulingMeetingsAPI {
+  class MeetingTime {
+    int start;
+    int end;
+    MeetingTime(int start, int end) {
+      this.start = start;
+      this.end = end;
+    }
+    public String toString() {
+      return String.format("%d-%d", start, end);
+    }
+  }
     /*
      * PREREQUISITE: unsafe functions that we'll use to simulate external API calls
      *
